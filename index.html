@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Adiya!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-classical-waltz-99.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="birthdaySong">
+        <source src="music/50cent-in-da-club.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Snow Container -->
+    <div class="snow-container"></div>
+
+    <!-- Invitation Scene -->
+    <div id="invitationScene" class="scene active">
+        <div class="container">
+            <div class="invitation">
+                <h1>Lady Adiya</h1>
+                <p>You are cordially invited to a magical evening at the Royal Palace.</p>
+                <p>A special guest awaits your presence for an unforgettable celebration.</p>
+                <div class="buttons">
+                    <button class="btn accept">Accept Invitation</button>
+                    <button class="btn decline">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ballroom Scene -->
+    <div id="ballroomScene" class="scene">
+        <div class="ballroom-background"></div>
+        <div class="character-container">
+            <div class="character-portrait">
+                <img src="images/drew-image.jpg" alt="Drew">
+            </div>
+            <div class="dialogue">
+                <p class="german-text">"Darf ich um diesen Tanz bitten?"</p>
+            </div>
+            <div class="buttons">
+                <button class="btn accept dance-btn">Dance with him</button>
+                <button class="btn decline step-btn">Step on his foot</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dance Scene -->
+    <div id="danceScene" class="scene">
+        <div class="ballroom-background"></div>
+        <div class="character-container">
+            <div class="character-portrait">
+                <img src="images/drew-image.jpg" alt="Drew">
+            </div>
+            <div class="dialogue">
+                <p class="german-text">"Du tanzt wie ein Engel..."</p>
+            </div>
+            <div class="buttons">
+                <button class="btn accept blush-btn">Blush and smile</button>
+                <button class="btn decline tease-btn">Tease him about his accent</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Garden Scene -->
+    <div id="gardenScene" class="scene">
+        <div class="garden-background"></div>
+        <div class="character-container">
+            <div class="character-portrait">
+                <img src="images/drew-image.jpg" alt="Drew">
+            </div>
+            <div class="dialogue">
+                <p class="german-text">"Die Sterne sind heute Abend besonders schön... genau wie du."</p>
+            </div>
+            <div class="buttons">
+                <button class="btn accept follow-btn">Follow him to the surprise</button>
+                <button class="btn decline wait-btn">Ask where we're going</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surprise Scene -->
+    <div id="surpriseScene" class="scene">
+        <div class="garden-background"></div>
+        <div class="character-container special-container">
+            <div class="character-portrait">
+                <img src="images/drew-image.jpg" alt="Drew">
+            </div>
+            <div class="dialogue">
+                <p class="german-text">"Alles Gute zum 22. Geburtstag, meine Prinzessin!"</p>
+                <p class="birthday-message">✨ The garden lights up with hundreds of floating lanterns, each carrying a birthday wish. A beautiful cake appears, decorated with 22 golden candles. The night sky above sparkles with stars, as if they too are celebrating your special day. ✨</p>
+            </div>
+            <div class="buttons">
+                <button class="btn accept final-btn">Make a wish 💫</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Scene -->
+    <div id="finalScene" class="scene">
+        <div class="celebration-container">
+            <h1 class="birthday-title">Happy Birthday, Adiya! 🎉</h1>
+            <div class="celebration-text">
+                <p>On your 22nd journey around the sun,</p>
+                <p>May your life be filled with moments as magical as this night.</p>
+                <p>May every wish you make come true,</p>
+                <p>And may your heart always dance with joy.</p>
+                <p>Happy Birthday! 🎂✨</p>
+            </div>
+            <div class="buttons">
+                <button class="btn cat-btn">
+                    <span class="cat-emoji">🐱</span>
+                    <span class="cat-text">Go Party with 50 Cent!</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
